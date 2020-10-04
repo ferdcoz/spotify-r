@@ -81,6 +81,8 @@ track_num_artist <-
   select(-id) %>%
   top_n(20, n)
 ```
+![](spotifyr_artists.png)<!-- -->
+
 # 4. Let's ggplot it
 Tables are good, but not as good a bars, so, let's ggpolot it
 ``` r
@@ -113,6 +115,8 @@ ggplot(
         plot.title = element_text(hjust = 0.5, face = 'bold', size = 15),
         plot.caption = element_text(hjust = 1,face = 'bold.italic'))
 ```
+![](spotifyr_artists_bars.png)<!-- -->
+
 # 5. Sentiment Analysis
 Last but not least. We could also get an index defined by Spotify as: `valence`. Defined as:
 
@@ -126,6 +130,8 @@ Combining valance with the energy index for each, we're now able to map songs in
  4. Chill/Peaceful: more `VALANCE` less `ENERGY`
 
 And all the combinations in between. Let's see how my (or most of them) favorite songs and artists distribution looks like:
+
+![](spotifyr_artists_valence.png)<!-- -->
 
 Turbulent/Angry? - I blame Kurt Cobain, Krist Novoselic and Dave Grohl for that.
 

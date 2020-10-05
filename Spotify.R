@@ -36,8 +36,8 @@ library(tidyverse)
 library(knitr)
 
 ## Spotify API handshake
-Sys.setenv(SPOTIFY_CLIENT_ID = '6668613321514ba9b1e29339211357a8')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = '213860ac09cb43f6a5ca2c3ec273ba3f')
+Sys.setenv(SPOTIFY_CLIENT_ID = 'XXXXXXXXXX')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = 'XXXXXXXXXX')
 
 access_token <- get_spotify_access_token(
                                           client_id = Sys.getenv('SPOTIFY_CLIENT_ID'), 
